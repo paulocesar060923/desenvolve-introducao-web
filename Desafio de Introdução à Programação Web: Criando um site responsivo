@@ -5,40 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Trainer</title>
     <style>
-        /* styles.css */
-
-        /* Estilos básicos e responsivos */
-        body {
-            font-family: Arial, sans-serif;
+        /* Reset básico */
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estilos básicos */
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         header, footer {
             background-color: #333;
-            color: white;
+            color: #fff;
             padding: 1rem;
             text-align: center;
         }
 
-        header nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
+        header h1 {
+            margin-bottom: 0.5rem;
         }
 
-        header nav ul li {
-            display: inline;
+        header nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
 
         header nav ul li a, #toggle-dark-mode {
             color: white;
             text-decoration: none;
             padding: 0.5rem 1rem;
+            transition: background-color 0.3s;
         }
 
         header nav ul li a:hover, #toggle-dark-mode:hover {
@@ -48,8 +55,10 @@
 
         .container {
             width: 90%;
+            max-width: 1200px;
             margin: 0 auto;
             flex: 1;
+            padding: 1rem 0;
         }
 
         main {
@@ -60,9 +69,27 @@
             margin: 2rem 0;
         }
 
+        section h2 {
+            margin-bottom: 1rem;
+            color: #333;
+            text-align: center;
+        }
+
+        section p {
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        section ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+
         form {
             display: flex;
             flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         form label {
@@ -72,6 +99,9 @@
         form input, form textarea, form button {
             margin-bottom: 1rem;
             padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
         }
 
         form button {
@@ -79,6 +109,7 @@
             color: white;
             border: none;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
 
         form button:hover {
@@ -96,6 +127,12 @@
 
             section {
                 margin: 3rem 0;
+            }
+        }
+
+        @media (min-width: 600px) {
+            section ul {
+                columns: 2;
             }
         }
 
@@ -156,7 +193,7 @@
         <section id="contact">
             <h2>Contato</h2>
             <p>Entre em contato para agendar sua primeira sessão ou para mais informações.</p>
-            <form>
+            <form id="contact-form">
                 <label for="name">Nome:</label>
                 <input type="text" id="name" name="name" required>
                 <label for="email">Email:</label>
@@ -165,11 +202,12 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
+            <p id="form-status" style="text-align: center; display: none;">Mensagem enviada com sucesso!</p>
         </section>
     </main>
 
     <footer class="container">
-        <p>Nome Completo - PDBD</p>
+        <p>Paulo César Costa - PBOD036</p>
     </footer>
 
     <script>
@@ -178,7 +216,24 @@
         document.getElementById('toggle-dark-mode').addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
         });
+
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            document.getElementById('form-status').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('form-status').style.display = 'none';
+                document.getElementById('contact-form').reset();
+            }, 3000);
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 </body>
 </html>
-
