@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Filmes Favoritos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+        .galeria {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .filme {
+            margin: 20px;
+            text-align: center;
+        }
+        .filme img {
+            max-width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s;
+        }
+        .filme img:hover {
+            transform: scale(1.05);
+        }
+        .filme a {
+            text-decoration: none;
+            color: darkblue;
+            font-weight: bold;
+        }
+        .filme a:hover {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Galeria de Filmes Favoritos</h1>
+    <div class="galeria">
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/Rogue_One" target="_blank">
+                <img src="Arquivos de Imagem/star-wars-rogue-one.jpg" alt="Star Wars Rogue One">
+                <p>Star Wars: Rogue One</p>
+            </a>
+        </div>
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/The_Lord_of_the_Rings:_The_Return_of_the_King" target="_blank">
+                <img src="Arquivos de Imagem/senhor-dos-aneis-retorno-do-rei.jpg" alt="Senhor dos Anéis: O Retorno do Rei">
+                <p>Senhor dos Anéis: O Retorno do Rei</p>
+            </a>
+        </div>
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/John_Wick:_Chapter_4" target="_blank">
+                <img src="Arquivos de Imagem/john-wick-4.jpg" alt="John Wick 4">
+                <p>John Wick 4</p>
+            </a>
+        </div>
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/Harry_Potter_and_the_Goblet_of_Fire_(film)" target="_blank">
+                <img src="Arquivos de Imagem/harry-potter-calice-de-fogo.jpg" alt="Harry Potter e o Cálice de Fogo">
+                <p>Harry Potter e o Cálice de Fogo</p>
+            </a>
+        </div>
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/Logan_(filme)" target="_blank">
+                <img src="Arquivos de Imagem/logan.jpg" alt="Logan">
+                <p>Logan</p>
+            </a>
+        </div>
+        <div class="filme">
+            <a href="https://pt.wikipedia.org/wiki/V_for_Vendetta_(filme)" target="_blank">
+                <img src="Arquivos de Imagem/v-de-vinganca.jpg" alt="V de Vingança">
+                <p>V de Vingança</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
