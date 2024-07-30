@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa de Satisfação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-group input[type="radio"],
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-group .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .form-group .radio-group label {
+            margin-right: 20px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+        <h1>Pesquisa de Satisfação</h1>
+        <!-- Dados Pessoais -->
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>
+        
+        <!-- Pesquisa -->
+        <div class="form-group">
+            <label>Como você avalia nosso atendimento?</label>
+            <div class="radio-group">
+                <input type="radio" id="excelente" name="avaliacao" value="excelente">
+                <label for="excelente">Excelente</label>
+                <input type="radio" id="bom" name="avaliacao" value="bom">
+                <label for="bom">Bom</label>
+                <input type="radio" id="regular" name="avaliacao" value="regular">
+                <label for="regular">Regular</label>
+                <input type="radio" id="ruim" name="avaliacao" value="ruim">
+                <label for="ruim">Ruim</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label>Você recomendaria nossos serviços a um amigo?</label>
+            <div class="radio-group">
+                <input type="radio" id="sim" name="recomendacao" value="sim">
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="recomendacao" value="nao">
+                <label for="nao">Não</label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="frequencia">Com que frequência você utiliza nossos serviços?</label>
+            <select id="frequencia" name="frequencia">
+                <option value="diariamente">Diariamente</option>
+                <option value="semanalmente">Semanalmente</option>
+                <option value="mensalmente">Mensalmente</option>
+                <option value="raramente">Raramente</option>
+            </select>
+        </div>
+        
+        <!-- Checkbox de Autorização -->
+        <div class="form-group">
+            <input type="checkbox" id="autorizacao" name="autorizacao">
+            <label for="autorizacao">Autorizo compartilhar minha resposta com terceiros</label>
+        </div>
+        
+        <!-- Botão de Envio -->
+        <div class="form-group">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
