@@ -1,0 +1,82 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.page-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.intro {
+    text-align: center;
+    padding: 20px;
+}
+
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.sidebar {
+    float: right;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.main {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.footer {
+    clear: both;
+}
+
+.zen-validate-html, .zen-validate-css, .zen-license, .zen-accessibility, .zen-github {
+    margin: 0 10px;
+    color: white;
+}
