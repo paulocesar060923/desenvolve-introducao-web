@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenagem a Rammstein</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('rammstein_logo.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        header img.logo {
+            max-width: 200px;
+            margin: 0 auto;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+        }
+        section, aside, footer {
+            margin-bottom: 20px;
+        }
+        aside {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .video-preview {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .video-preview img {
+            width: 560px;
+            height: auto;
+            cursor: pointer;
+            border: 3px solid #fff;
+            border-radius: 10px;
+        }
+        .container {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var images = document.querySelectorAll('.video-preview img');
+            images.forEach(function(img) {
+                img.addEventListener('click', function() {
+                    window.open(img.getAttribute('data-link'), '_blank');
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="rammstein_logo.jpg" alt="Rammstein Logo" class="logo">
+        <h1>Homenagem a Rammstein</h1>
+    </header>
+    <main>
+        <section id="introducao" class="container">
+            <h2>Introdução</h2>
+            <p>Rammstein é uma banda alemã de metal industrial, formada em Berlim em 1994. A banda é composta por Till Lindemann (vocal), Richard Z. Kruspe (guitarra principal), Paul Landers (guitarra rítmica), Oliver Riedel (baixo), Christoph Schneider (bateria) e Christian "Flake" Lorenz (teclado). O nome da banda é uma referência ao desastre aéreo da base aérea de Ramstein.</p>
+            <p>A importância de Rammstein para a música é inegável. Eles não apenas redefiniram o gênero do metal industrial, mas também influenciaram uma geração inteira de músicos e fãs com suas performances ao vivo espetaculares e suas letras provocativas.</p>
+        </section>
+        <aside>
+            <h2>Ficha de Identificação</h2>
+            <img src="4.jpg" alt="Rammstein" style="width:100%;height:auto;">
+            <ul>
+                <li><strong>Nome completo:</strong> Rammstein</li>
+                <li><strong>Formação:</strong> 1994, Berlim, Alemanha</li>
+                <li><strong>Gênero:</strong> Metal Industrial</li>
+                <li><strong>Membros:</strong> Till Lindemann, Richard Z. Kruspe, Paul Landers, Oliver Riedel, Christoph Schneider, Christian "Flake" Lorenz</li>
+            </ul>
+        </aside>
+        <section id="carreira" class="container">
+            <h2>Carreira</h2>
+            <p>A carreira da banda Rammstein começou em 1994, e ao longo dos anos eles lançaram diversos álbuns de sucesso. Seu estilo musical combina elementos de metal industrial com performances teatrais e pirotécnicas ao vivo. A banda é conhecida por suas letras provocativas e controversas, muitas vezes explorando temas de amor, violência e política.</p>
+            <p>Álbuns notáveis da banda incluem <em>Herzeleid</em> (1995), <em>Sehnsucht</em> (1997), <em>Mutter</em> (2001), <em>Reise, Reise</em> (2004), <em>Rosenrot</em> (2005), <em>Liebe ist für alle da</em> (2009) e o álbum homônimo <em>Rammstein</em> (2019).</p>
+        </section>
+        <section id="conquistas" class="container">
+            <h2>Conquistas e Realizações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Conquista</th>
+                        <th>Ano</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lançamento do álbum <em>Herzeleid</em></td>
+                        <td>1995</td>
+                    </tr>
+                    <tr>
+                        <td>Primeiro show ao vivo</td>
+                        <td>1996</td>
+                    </tr>
+                    <tr>
+                        <td>Disco de Platina para o álbum <em>Sehnsucht</em></td>
+                        <td>1997</td>
+                    </tr>
+                    <tr>
+                        <td>MTV Europe Music Awards - Melhor Banda Alemã</td>
+                        <td>2005</td>
+                    </tr>
+                    <tr>
+                        <td>Vários discos de platina e ouro</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Lançamento do álbum <em>Rammstein</em></td>
+                        <td>2019</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Data de coleta das informações: 2024</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="multimidia" class="container">
+            <h2>Clipes e Multimídia</h2>
+            <div class="video-preview">
+                <img src="https://img.youtube.com/vi/W3q8Od5qJio/0.jpg" alt="Du Hast" data-link="https://youtu.be/W3q8Od5qJio?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ">
+                <a href="https://youtu.be/W3q8Od5qJio?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ" target="_blank"><em>Du Hast</em></a>
+            </div>
+            <div class="video-preview">
+                <img src="https://img.youtube.com/vi/EOnSh3QlpbQ/0.jpg" alt="Ich Will" data-link="https://youtu.be/EOnSh3QlpbQ?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ">
+                <a href="https://youtu.be/EOnSh3QlpbQ?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ" target="_blank"><em>Ich Will</em></a>
+            </div>
+            <div class="video-preview">
+                <img src="https://img.youtube.com/vi/NeQM1c-XCDc/0.jpg" alt="Deutschland" data-link="https://youtu.be/NeQM1c-XCDc?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ">
+                <a href="https://youtu.be/NeQM1c-XCDc?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ" target="_blank"><em>Deutschland</em></a>
+            </div>
+            <div class="video-preview">
+                <img src="https://img.youtube.com/vi/Rr8ljRgcJNM/0.jpg" alt="Amerika" data-link="https://youtu.be/Rr8ljRgcJNM?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ">
+                <a href="https://youtu.be/Rr8ljRgcJNM?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ" target="_blank"><em>Amerika</em></a>
+            </div>
+            <div class="video-preview">
+                <img src="https://img.youtube.com/vi/WXv31OmnKqQ/0.jpg" alt="Mein Herz Brennt" data-link="https://youtu.be/WXv31OmnKqQ?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ">
+                <a href="https://youtu.be/WXv31OmnKqQ?list=RDEMNfxU2Vk5xtTODj0ixpqOsQ" target="_blank"><em>Mein Herz Brennt</em></a>
+            </div>
+        </section>
+        <section id="importancia" class="container">
+            <h2>Importância de Rammstein</h2>
+            <p>Rammstein é uma banda que não apenas mudou a cena musical, mas também influenciou culturalmente com sua arte, teatralidade e uma presença de palco única. Eles abordam temas controversos e complexos em suas músicas, desafiando as normas e provocando reflexões profundas.</p>
+            <p>A importância de Rammstein também se reflete em sua capacidade de inovar musicalmente e visualmente. Eles foram pioneiros em muitos aspectos do gênero metal industrial e continuam a evoluir, inspirando uma nova geração de músicos e fãs.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Referências:</p>
+        <ul>
+            <li><a href="https://www.rammstein.de/en/" target="_blank">Site oficial do Rammstein</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Rammstein" target="_blank">Wikipedia - Rammstein</a></li>
+            <li><a href="https://www.youtube.com/user/rammstein" target="_blank">YouTube - Canal oficial do Rammstein</a></li>
+        </ul>
+        <p>Data de criação: 2024</p>
+    </footer>
+</body>
+</html>
