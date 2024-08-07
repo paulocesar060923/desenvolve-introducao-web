@@ -1,0 +1,32 @@
+a {
+    color: red; /* Cor padrão do link */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+a:hover {
+    color: lemonchiffon; /* Cor do link quando o mouse está sobre ele */
+}
+
+/* 2. Estilo para parágrafos */
+p {
+    font-family: Arial, sans-serif; /* Fonte padrão para todos os parágrafos */
+}
+
+/* Parágrafos logo após h1 */
+h1 + p {
+    font-weight: bold; /* Parágrafos logo após h1 ficarão em negrito */
+}
+
+/* 3. Estilo para a classe .destaque */
+.destaque {
+    font-family: Arial, sans-serif; /* Fonte padrão para elementos com a classe .destaque */
+}
+
+/* Se a classe .destaque for atribuída a um parágrafo */
+p.destaque {
+    font-weight: bold; /* Parágrafos com a classe .destaque ficarão em negrito */
+}
+
+/* Se a classe .destaque for atribuída a um <strong> */
+strong.destaque {
+    color: red; /* <strong> com a classe .destaque ficará em vermelho */
